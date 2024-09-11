@@ -171,6 +171,38 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#main p {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.rooster, .trajacten {
+    background-color: #face02;
+    text-align: center;
+    padding: 20px;
+}
+
+.trajacten {
+    background-color: #f8a3c0;
+}
+
 /* Footer */
 footer {
     text-align: center;
