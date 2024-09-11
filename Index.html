@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Curio</title>
+    <title>Curio Website</title>
 </head>
 <body>
     <header>
@@ -29,95 +29,94 @@
     </header>
 
     <main>
-
-    <div class="rooster">
-        <section id="rooster">
-            <h1>Roosters</h1>
-            <p>Ben je benieuwd naar wat je kan verwachten? (die met software development te maken hebben) die je krijgt in het 1e leerjaar.</p>
-            <img src="img/Rooster eerste leerjaar.png" alt="Rooster">
-            <p>dit is gebaseerd op het rooster van eerste jaars!</p>
-        </section>
-    </div>
+        <div class="rooster">
+            <section id="rooster">
+                <h1>Roosters</h1>
+                <p>Ben je benieuwd naar wat je kan verwachten? (die met software development te maken hebben) die je krijgt in het 1e leerjaar.</p>
+                <img src="img/Rooster eerste leerjaar.png" alt="Rooster" onclick="openModal('img/Rooster eerste leerjaar.png', 'Rooster Eerste Leerjaar')">
+                <p>dit is gebaseerd op het rooster van eerste jaars!</p>
+            </section>
+        </div>
 
     <div class="trajacten">
-        <section id="trajecten">
-            <h1>Trajecten</h1>
-            <p>Dan kun je bij deze opleiding mogelijk versnellen!
-                Je rond jouw opleiding dan af in 3 jaar in plaats van 4 jaar.
-                
-                Hoe kom ik in aanmerking?
-                Als je al wat ervaring hebt met software development en je het goed doet in de lessen dan is er na een halfjaar de mogelijkheid dit versnelde traject te volgen. Om in aanmerking te komen is het onder andere belangrijk dat je je weekchecks op tijd inlevert en goed meedoet tijdens de lessen.</p>
-                <img src="img/Opleidingsoverzicht3.png" alt="opleiding overzicht">
-            </section>
+            <section id="trajecten">
+                <h1>Trajecten</h1>
+                <p>Dan kun je bij deze opleiding mogelijk versnellen!
+                    Je rond jouw opleiding dan af in 3 jaar in plaats van 4 jaar.
+                    
+                    Hoe kom ik in aanmerking?
+                    Als je al wat ervaring hebt met software development en je het goed doet in de lessen dan is er na een halfjaar de mogelijkheid dit versnelde traject te volgen. Om in aanmerking te komen is het onder andere belangrijk dat je je weekchecks op tijd inlevert en goed meedoet tijdens de lessen.</p>
+                    <img src="img/Opleidingsoverzicht3.png" alt="opleiding overzicht" onclick="openModal('img/Opleidingsoverzicht3.png', 'Opleiding Overzicht')">
+                </section>
     </div>
+
 
     <section id="docenten">
         <h1>Docenten</h1>
         <div class="docent-grid">
 
             <div class="docent-card" style="background-color: #face02;">
-                <img src="img/docenten/Armando-Roerdinkveldboom.jpg" alt="Armando">
-                <h2>Armando Roerdinkveldboom</h2>
-                <p>Natief</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #f9aecd;">
-                <img src="img/docenten/Bart-kouwenberg.png" alt="Bart Kouwenberg">
-                <h2>Bart Kouwenberg</h2>
-                <p>Natief/Mentor/Praktijk</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #face02;">
-                <img src="img/docenten/bob-smekens.jpg" alt="Bob Smekens">
-                <h2>Bob Smekens</h2>
-                <p>Rekenen</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #f9aecd;">
-                <img src="img/docenten/corne-wagtmans.png" alt="Corne Wagtmans">
-                <h2>Corne Wagtmans</h2>
-                <p>Natief/Pro</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #face02;" >
-                <img src="img/docenten/elton-boekhoudt.png" alt="Elton Boekhoudt">
-                <h2>Elton Boekhoudt</h2>
-                <p>Web/Mentor</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #f9aecd;">
-                <img src="img/docenten/ine-vermeer.jpg" alt="Ine Vermeer">
-                <h2>Ine Vermeer</h2>
-                <p>Web/Mentor</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #face02;">
-                <img src="img/docenten/Joep-van-gils.png" alt="Joep van Gils">
-                <h2>Joep van Gils</h2>
-                <p>Nederlands</p>
-                </div>
+            <img src="img/docenten/Armando-Roerdinkveldboom.jpg" alt="Armando">
+            <h2>Armando Roerdinkveldboom</h2>
+            <p>Natief</p>
+            </div>
         
-            
-                <div class="docent-card" style="background-color: #f9aecd;">
-                <img src="img/docenten/michel-meeuwesen.jpeg" alt="Michel Meeuwesen">
-                <h2>Michel Meeuwesen</h2>
-                <p>Natief</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #face02;">
-                <img src="img/docenten/mustafa-kasar.jpg" alt="Mustafa Kasar">
-                <h2>Mustafa Kasar</h2>
-                <p>Engels</p>
-                </div>
-            
-                <div class="docent-card" style="background-color: #f9aecd;">
-                <img src="img/docenten/steven-van-roosendaal.png" alt="Steven van Roosendaal">
-                <h2>Steven van Roosendaal</h2>
-                <p>Web</p>
-                </div>
+            <div class="docent-card" style="background-color: #f9aecd;">
+            <img src="img/docenten/Bart-kouwenberg.png" alt="Bart Kouwenberg">
+            <h2>Bart Kouwenberg</h2>
+            <p>Natief/Mentor/Praktijk</p>
+            </div>
+        
+            <div class="docent-card" style="background-color: #face02;">
+            <img src="img/docenten/bob-smekens.jpg" alt="Bob Smekens">
+            <h2>Bob Smekens</h2>
+            <p>Rekenen</p>
+            </div>
+        
+            <div class="docent-card" style="background-color: #f9aecd;">
+            <img src="img/docenten/corne-wagtmans.png" alt="Corne Wagtmans">
+            <h2>Corne Wagtmans</h2>
+            <p>Natief/Pro</p>
+            </div>
+        
+            <div class="docent-card" style="background-color: #face02;" >
+            <img src="img/docenten/elton-boekhoudt.png" alt="Elton Boekhoudt">
+            <h2>Elton Boekhoudt</h2>
+            <p>Web/Mentor</p>
+            </div>
+        
+            <div class="docent-card" style="background-color: #f9aecd;">
+            <img src="img/docenten/ine-vermeer.jpg" alt="Ine Vermeer">
+            <h2>Ine Vermeer</h2>
+            <p>Web/Mentor</p>
+            </div>
+        
+            <div class="docent-card" style="background-color: #face02;">
+            <img src="img/docenten/Joep-van-gils.png" alt="Joep van Gils">
+            <h2>Joep van Gils</h2>
+            <p>Nederlands</p>
+            </div>
+    
+        
+            <div class="docent-card" style="background-color: #f9aecd;">
+            <img src="img/docenten/michel-meeuwesen.jpeg" alt="Michel Meeuwesen">
+            <h2>Michel Meeuwesen</h2>
+            <p>Natief</p>
+            </div>
+        
+            <div class="docent-card" style="background-color: #face02;">
+            <img src="img/docenten/mustafa-kasar.jpg" alt="Mustafa Kasar">
+            <h2>Mustafa Kasar</h2>
+            <p>Engels</p>
+            </div>
+        
+            <div class="docent-card" style="background-color: #f9aecd;">
+            <img src="img/docenten/steven-van-roosendaal.png" alt="Steven van Roosendaal">
+            <h2>Steven van Roosendaal</h2>
+            <p>Web</p>
+            </div>
         </div>
-        </section>
-    </main>
+        </div>
     <footer>
         <p>© Curio 2024</p>
         <div class="social-media">
@@ -126,4 +125,34 @@
             <a href="https://www.curio.nl/" target="_blank"><img src="img/internet.png" alt="InternetLogo"></a>
         </div>
     </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+</body>
+
+<script>
+    function openModal(imageSrc, captionText) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        var caption = document.getElementById("caption");
+    
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+        caption.innerHTML = captionText;
+    
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+    </script>
 </html>
