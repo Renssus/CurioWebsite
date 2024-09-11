@@ -223,3 +223,107 @@ footer .social-media img {
     width: 30px;
     margin: 0;
 }
+/* Telefoon + Tablet css */
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    header img {
+        width: 60px; /* Adjust logo size for mobile */
+    }
+
+    .nav-container {
+        padding: 10px 0; /* Adjust padding for mobile */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Adjust gap for mobile screens */
+        width: 100%;
+    }
+
+    .nav-box {
+        width: 90%; /* Ensure full width for mobile */
+        max-width: 300px; /* Limit max-width to avoid stretching */
+        font-size: 14px; /* Adjust font size for readability */
+        padding: 10px;
+        box-sizing: border-box; /* Include padding in width calculations */
+        text-align: center; /* Center text for better fit */
+    }
+
+    .nav-box .arrow {
+        font-size: 18px; /* Adjust arrow size */
+        right: -5px;
+    }
+
+    .sign-up-link {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sign-up-link .nav-box {
+        width: 90%; /* Ensure full width for mobile */
+        max-width: 300px; /* Limit max-width to avoid stretching */
+        font-size: 14px; /* Adjust font size for readability */
+        padding: 10px;
+    }
+
+    .docent-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid columns for mobile */
+        gap: 15px; /* Increase gap for larger images */
+        padding: 0 10px; /* Add horizontal padding */
+        justify-content: center;
+        max-width: 100%; /* Ensure it does not exceed the screen width */
+        box-sizing: border-box;
+    }
+
+    .docent-card {
+        width: 100%;
+        max-width: 150px; /* Increase card width for mobile */
+        padding: 10px;
+        font-size: 12px; /* Adjust font size for mobile */
+        box-sizing: border-box;
+    }
+
+    .docent-card img {
+        width: 80px; /* Increase image size for mobile */
+        height: 80px;
+    }
+
+    /* Main Section */
+    #main {
+        padding: 30px 10px; /* Ensure enough padding for readability on mobile */
+        text-align: center;
+        color: #333; /* Ensure text color contrasts with background */
+        max-width: 100%; /* Prevent overflow */
+        box-sizing: border-box;
+    }
+
+    #main h1 {
+        font-size: 20px; /* Adjust heading size for mobile */
+        margin-bottom: 10px;
+    }
+
+    #main p {
+        font-size: 12px; /* Adjust font size for readability on mobile */
+        margin: 0 auto;
+        max-width: 100%; /* Ensure text does not exceed screen width */
+        line-height: 1.4; /* Improve readability */
+        padding: 0 10px; /* Add padding to prevent text from touching edges */
+        box-sizing: border-box;
+        color: white;
+    }
+    footer {
+        text-align: center;
+        background-color: #002d6e;
+        color: #fff;
+        margin-top: 50px;
+        width: 95%;
+    }
+}
