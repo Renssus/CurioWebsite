@@ -6,18 +6,15 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center; 
+    align-items: center; 
     min-height: 100vh;
 }
 
-
-/* Header */
 header {
     position: relative;
     width: 100%;
 }
-
 
 .background-image {
     position: absolute;
@@ -50,8 +47,6 @@ header section {
     position: relative;
     z-index: 1;
 }
-
-/* Nav */
 
 .nav-container {
     display: flex;
@@ -118,21 +113,18 @@ img {
     width: 100%;
 }
 
-/* Docenten */
-
 #docenten {
     text-align: center;
 }
 
 #docenten h1 {
     margin: 0 auto 20px;
-    font-size: 2em; /* Adjust font size as needed */
+    font-size: 2em;
 }
-
 
 .docent-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto-fit columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
     justify-content: center;
@@ -203,7 +195,6 @@ ul {
     background-color: #f8a3c0;
 }
 
-/* Footer */
 footer {
     text-align: center;
     background-color: #002d6e;
@@ -223,40 +214,39 @@ footer .social-media img {
     width: 30px;
     margin: 0;
 }
-/* Telefoon + Tablet css */
 
 @media (max-width: 480px) {
     body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden;
     }
 
     header img {
-        width: 60px; /* Adjust logo size for mobile */
+        width: 60px;
     }
 
     .nav-container {
-        padding: 10px 0; /* Adjust padding for mobile */
-        box-sizing: border-box; /* Include padding in width calculations */
+        padding: 10px 0;
+        box-sizing: border-box;
     }
 
     .nav-links {
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Adjust gap for mobile screens */
+        gap: 10px;
         width: 100%;
     }
 
     .nav-box {
-        width: 90%; /* Ensure full width for mobile */
-        max-width: 300px; /* Limit max-width to avoid stretching */
-        font-size: 14px; /* Adjust font size for readability */
+        width: 90%;
+        max-width: 300px;
+        font-size: 14px;
         padding: 10px;
-        box-sizing: border-box; /* Include padding in width calculations */
-        text-align: center; /* Center text for better fit */
+        box-sizing: border-box;
+        text-align: center;
     }
 
     .nav-box .arrow {
-        font-size: 18px; /* Adjust arrow size */
+        font-size: 18px;
         right: -5px;
     }
 
@@ -268,57 +258,151 @@ footer .social-media img {
     }
 
     .sign-up-link .nav-box {
-        width: 90%; /* Ensure full width for mobile */
-        max-width: 300px; /* Limit max-width to avoid stretching */
-        font-size: 14px; /* Adjust font size for readability */
+        width: 90%;
+        max-width: 300px;
+        font-size: 14px;
         padding: 10px;
     }
 
     .docent-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid columns for mobile */
-        gap: 15px; /* Increase gap for larger images */
-        padding: 0 10px; /* Add horizontal padding */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 0 10px;
         justify-content: center;
-        max-width: 100%; /* Ensure it does not exceed the screen width */
+        max-width: 100%;
         box-sizing: border-box;
     }
 
     .docent-card {
         width: 100%;
-        max-width: 150px; /* Increase card width for mobile */
+        max-width: 150px;
         padding: 10px;
-        font-size: 12px; /* Adjust font size for mobile */
+        font-size: 12px;
         box-sizing: border-box;
     }
 
     .docent-card img {
-        width: 80px; /* Increase image size for mobile */
+        width: 80px;
         height: 80px;
     }
 
-    /* Main Section */
     #main {
-        padding: 30px 10px; /* Ensure enough padding for readability on mobile */
+        padding: 30px 10px;
         text-align: center;
-        color: #333; /* Ensure text color contrasts with background */
-        max-width: 100%; /* Prevent overflow */
+        color: #333;
+        max-width: 100%;
         box-sizing: border-box;
     }
 
     #main h1 {
-        font-size: 20px; /* Adjust heading size for mobile */
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
     #main p {
-        font-size: 12px; /* Adjust font size for readability on mobile */
+        font-size: 12px;
         margin: 0 auto;
-        max-width: 100%; /* Ensure text does not exceed screen width */
-        line-height: 1.4; /* Improve readability */
-        padding: 0 10px; /* Add padding to prevent text from touching edges */
+        max-width: 100%;
+        line-height: 1.4;
+        padding: 0 10px;
         box-sizing: border-box;
         color: white;
     }
+
+    footer {
+        text-align: center;
+        background-color: #002d6e;
+        color: #fff;
+        margin-top: 50px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    .nav-container {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .nav-box {
+        width: 90%;
+        max-width: 300px;
+        font-size: 16px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .nav-box .arrow {
+        font-size: 20px;
+        right: -10px;
+    }
+
+    .sign-up-link {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sign-up-link .nav-box {
+        width: 90%;
+        max-width: 300px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .docent-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .docent-card {
+        width: 100%;
+        max-width: 150px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .docent-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #main {
+        padding: 40px 15px;
+        text-align: center;
+        color: #fff;
+    }
+
+    #main h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    #main p {
+        font-size: 14px;
+        margin: 0 auto;
+        max-width: 100%;
+        line-height: 1.5;
+        padding: 0 15px;
+    }
+
     footer {
         text-align: center;
         background-color: #002d6e;
