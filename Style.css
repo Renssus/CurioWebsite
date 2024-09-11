@@ -36,3 +36,23 @@ header section {
     position: relative;
     z-index: 1;
 }
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #002d6e;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+footer .social-media img {
+    width: 30px;
+    margin: 0;
+}
